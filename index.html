@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="pt-BR" data-lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gustavo Almeida · Software Engineer</title>
+<meta name="description" content="Software Engineer · Python, Go e AWS · IA aplicada, APIs e automação. Portfólio de Gustavo Almeida.">
+<meta property="og:title" content="Gustavo Almeida · Software Engineer">
+<meta property="og:description" content="Python, Go & AWS · Applied AI, APIs and Automation">
+<meta property="og:image" content="https://gualmeidap.github.io/assets/portal-notas.gif">
+<link rel="icon" href="https://github.com/gualmeidap.png?size=64">
+<style>
+:root{--bg:#061a2e;--panel:#0c2742;--line:#1c3d5f;--text:#e8eef5;--muted:#9fb3c8;--gold:#d4a017;--gold2:#f0c14b;--link:#7cc4ff}
+@media (prefers-color-scheme:light){:root{--bg:#f6f8fb;--panel:#fff;--line:#d9e2ec;--text:#12263a;--muted:#52667a;--gold:#b8860b;--gold2:#9a6f00;--link:#0a58ca}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--link)}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+/* idioma: sem JS o padrão é português */
+.en{display:none}
+html[data-lang="en"] .en{display:revert}
+html[data-lang="en"] .pt{display:none}
+header.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+header.top nav a{color:var(--muted);text-decoration:none;margin-right:18px;font-size:.92rem}
+header.top nav a:hover{color:var(--text)}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.lang button{background:transparent;color:var(--muted);border:0;padding:6px 14px;font-weight:700;font-size:.85rem;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--gold);color:#071b2e}
+.hero{padding:64px 0 40px;display:grid;grid-template-columns:150px 1fr;gap:32px;align-items:center}
+.hero img{width:150px;height:150px;border-radius:50%;border:3px solid var(--gold);object-fit:cover}
+h1{margin:0 0 6px;font-size:2.4rem;line-height:1.15}
+.role{color:var(--gold2);font-weight:700;font-size:1.15rem;margin:0 0 6px}
+.meta{color:var(--muted);margin:0 0 18px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:9px 16px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--text);text-decoration:none;font-weight:600;font-size:.92rem}
+.btn.primary{background:var(--gold);border-color:var(--gold);color:#071b2e}
+section{padding:36px 0;border-top:1px solid var(--line)}
+h2{margin:0 0 18px;font-size:1.5rem}
+.about p{max-width:760px;color:var(--text)}
+.facts{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:8px;max-width:760px}
+.facts li{color:var(--muted)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:0 0 26px}
+.card .shot{display:block;background:#020b14}
+.card .shot img{display:block;width:100%;height:auto}
+.card .body{padding:20px 22px 22px}
+.card h3{margin:0 0 4px;font-size:1.25rem}
+.card .tag{display:inline-block;font-size:.74rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#071b2e;background:var(--gold);border-radius:999px;padding:2px 10px;margin-bottom:10px}
+.card .tag.soft{background:transparent;color:var(--muted);border:1px solid var(--line)}
+.card p{margin:0 0 12px}
+.card .focus{color:var(--muted)}
+.card .links{margin:14px 0 10px;font-size:.95rem}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{font-size:.78rem;border:1px solid var(--line);border-radius:6px;padding:2px 8px;color:var(--muted)}
+.stack{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.stack h3{margin:0 0 8px;font-size:1rem;color:var(--gold2)}
+footer{padding:36px 0 56px;color:var(--muted);border-top:1px solid var(--line);font-size:.92rem}
+@media(max-width:640px){.hero{grid-template-columns:1fr;text-align:left}h1{font-size:1.9rem}header.top nav{display:none}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <nav>
+    <a href="#sobre"><span class="pt">Sobre</span><span class="en">About</span></a>
+    <a href="#projetos"><span class="pt">Projetos</span><span class="en">Projects</span></a>
+    <a href="#stack">Stack</a>
+  </nav>
+  <div class="lang" role="group" aria-label="Idioma / Language">
+    <button type="button" data-set="pt" aria-pressed="true">PT</button>
+    <button type="button" data-set="en" aria-pressed="false">EN</button>
+  </div>
+</div></header>
+
+<main class="wrap">
+<div class="hero">
+  <img src="https://github.com/gualmeidap.png?size=300" alt="Gustavo Almeida">
+  <div>
+    <h1>Gustavo Almeida</h1>
+    <p class="role">Software Engineer · Python, Go &amp; AWS</p>
+    <p class="meta">
+      <span class="pt">IA aplicada, APIs e automação · São Paulo, Brasil · Inglês fluente · Aberto a vagas remotas (EUA/Europa)</span>
+      <span class="en">Applied AI, APIs and automation · São Paulo, Brazil · Fluent English · Open to remote roles (US/EU)</span>
+    </p>
+    <div class="btns">
+      <a class="btn primary" href="https://www.linkedin.com/in/gualmeidap" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/gualmeidap" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</div>
+
+<section id="sobre" class="about">
+  <h2><span class="pt">Sobre mim</span><span class="en">About me</span></h2>
+  <div class="pt">
+    <p>Sou <strong>Software Engineer</strong> e construo sistemas que resolvem problemas operacionais reais em escala. Meu foco é orquestração de processos, integração de sistemas e APIs que sejam, ao mesmo tempo, performáticas e fáceis de manter.</p>
+    <p>A maior parte do que eu construo substitui algo que antes era feito à mão: pipelines de documentos que eram conciliação manual, provisionamento de usuários que era um chamado de suporte. Esse é o fio condutor dos projetos abaixo.</p>
+    <ul class="facts">
+      <li>🏢 Software Engineer na <strong>Universidade Brasil</strong>, construindo plataformas internas para as operações acadêmica, financeira e de TI</li>
+      <li>🎓 Bacharelado em Ciência da Computação na <strong>UNICID</strong>, formatura em dezembro de 2026</li>
+      <li>🛠 Mais de 4 anos em TI: analista de TI desde 2022, software engineer desde março de 2026</li>
+    </ul>
+  </div>
+  <div class="en">
+    <p>I'm a <strong>Software Engineer</strong> building systems that solve real operational problems at scale. My focus is process orchestration, systems integration, and APIs that are both performant and maintainable.</p>
+    <p>Most of what I build replaces something that used to be done by hand: document pipelines that were manual reconciliation, user provisioning that was a support ticket. That's the thread across the projects below.</p>
+    <ul class="facts">
+      <li>🏢 Software Engineer at <strong>Universidade Brasil</strong>, building internal platforms for academic, financial and IT operations</li>
+      <li>🎓 B.Sc. in Computer Science at <strong>UNICID</strong>, graduating December 2026</li>
+      <li>🛠 4+ years in IT: IT analyst since 2022, software engineer since March 2026</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projetos">
+  <h2><span class="pt">Projetos em destaque</span><span class="en">Featured projects</span></h2>
+
+  <article class="card">
+    <a class="shot" href="https://gualmeidap.github.io/portal-notas-demo/" target="_blank" rel="noopener"><img src="assets/portal-notas.gif" alt="Portal Notas" loading="lazy"></a>
+    <div class="body">
+      <span class="tag">Portal Notas</span>
+      <h3><span class="pt">Automação de documentos fiscais e extração inteligente</span><span class="en">Tax document automation &amp; intelligent extraction</span></h3>
+      <div class="pt">
+        <p>Sistema back-end ponta a ponta que automatiza o recebimento de faturas de fornecedores. As faturas chegam em caixas de e-mail compartilhadas (Microsoft Graph), passam por um fluxo de aprovação (Compras ou direto ao Fiscal), são extraídas com leitura de PDF, OCR e regras de fornecedor configuráveis, arquivadas no SharePoint, e o Financeiro recebe uma planilha consolidada. Em produção diária: cerca de <strong>50 notas por mês de ~30 fornecedores</strong>, com cerca de 85% menos trabalho manual (estimativa minha).</p>
+        <p class="focus"><strong>Foco de engenharia:</strong> extrações com baixa confiança vão para uma fila de revisão humana em vez de serem adivinhadas. Um LLM local só ajuda a cadastrar fornecedores novos, então as faturas nunca saem da rede.</p>
+      </div>
+      <div class="en">
+        <p>End-to-end back-end system that automates supplier invoice intake. Invoices arrive in shared mailboxes (Microsoft Graph), go through an approval workflow (Purchasing or straight to Fiscal), are extracted with PDF parsing, OCR and config-driven supplier rules, archived to SharePoint, and Finance gets a consolidated spreadsheet. In daily production: about <strong>50 invoices a month from ~30 suppliers</strong>, with about 85% less manual work (my estimate).</p>
+        <p class="focus"><strong>Engineering focus:</strong> low-confidence extractions go to a human review queue instead of being guessed. A local LLM only helps register new suppliers, so invoices never leave the network.</p>
+      </div>
+      <p class="links"><a href="https://gualmeidap.github.io/portal-notas-demo/" target="_blank" rel="noopener"><span class="pt">Abrir a demo ao vivo</span><span class="en">Open the live demo</span></a> · <a href="https://github.com/gualmeidap/portal-notas-demo" target="_blank" rel="noopener"><span class="pt">Repositório</span><span class="en">Repository</span></a></p>
+      <div class="chips"><span>Python</span><span>FastAPI</span><span>Tesseract OCR</span><span>Microsoft Graph</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span><span>Prometheus</span><span>Grafana</span></div>
+    </div>
+  </article>
+
+  <article class="card">
+    <a class="shot" href="https://gualmeidap.github.io/portal-ti-o365-demo/" target="_blank" rel="noopener"><img src="assets/portal-ti.gif" alt="Portal TI" loading="lazy"></a>
+    <div class="body">
+      <span class="tag">Portal TI</span>
+      <h3><span class="pt">Governança de acesso entre Microsoft 365, um diretório e um ERP</span><span class="en">Access governance across Microsoft 365, a directory and an ERP</span></h3>
+      <div class="pt">
+        <p>Portal interno, construído do zero, que cria, redefine e bloqueia o acesso de uma pessoa em três sistemas com uma única ação: Microsoft 365, o Active Directory local e o ERP TOTVS RM. Substituiu um fluxo que dependia de abrir um chamado manualmente no departamento de TI.</p>
+        <p class="focus"><strong>Foco de engenharia:</strong> escopos por perfil (TI local, TI Sede, RH), contas protegidas que se recusam a ser bloqueadas, fila de retentativa para provisionamentos que falham e trilha de auditoria completa. Produção e homologação rodam lado a lado.</p>
+      </div>
+      <div class="en">
+        <p>Internal portal, built from scratch, that creates, resets and blocks a person's access in three systems with one action: Microsoft 365, the on-premises Active Directory and the TOTVS RM ERP. It replaced a workflow that depended on manually opening a ticket with the IT department.</p>
+        <p class="focus"><strong>Engineering focus:</strong> role-based scopes (local IT, central IT, HR), protected accounts that refuse to be blocked, a retry queue for failed provisioning, and a full audit trail. Production and staging run side by side.</p>
+      </div>
+      <p class="links"><a href="https://gualmeidap.github.io/portal-ti-o365-demo/" target="_blank" rel="noopener"><span class="pt">Abrir a demo ao vivo</span><span class="en">Open the live demo</span></a> · <a href="https://github.com/gualmeidap/portal-ti-o365-demo" target="_blank" rel="noopener"><span class="pt">Repositório</span><span class="en">Repository</span></a></p>
+      <div class="chips"><span>Python</span><span>Flask</span><span>TOTVS RM</span><span>Active Directory / LDAP</span><span>SQL Server</span><span>REST APIs</span></div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="body">
+      <span class="tag">Sentinela</span>
+      <h3><span class="pt">Monitoramento de disponibilidade e de eventos de negócio</span><span class="en">Availability &amp; business-event monitoring</span></h3>
+      <div class="pt">
+        <p>Painel que responde a duas perguntas em vez de uma: cada sistema em produção está respondendo, e o que ele de fato fez, como quantas redefinições de senha deram certo hoje, quantas falharam e por quê. Nenhum dado pessoal entra no Sentinela: eventos e motivos de falha vêm de um vocabulário fechado.</p>
+        <p class="focus"><strong>Situação:</strong> rodando na AWS (coletor a cada 5 min, API e painel em Lambda, DynamoDB), US$ 0/mês no nível Always Free · 118 testes · CI no GitHub Actions.</p>
+      </div>
+      <div class="en">
+        <p>Dashboard that answers two questions instead of one: is each production system responding, and what did it actually do, such as how many password resets succeeded today, how many failed, and why. No personal data ever enters Sentinela: events and failure reasons come from a closed vocabulary.</p>
+        <p class="focus"><strong>Status:</strong> running on AWS (collector every 5 min, API and dashboard on Lambda, DynamoDB), $0/month on the Always Free tier · 118 tests · GitHub Actions CI.</p>
+      </div>
+      <p class="links"><a href="https://ajswegtqzqq75cxnsidkrk4jxy0qqzjt.lambda-url.us-east-1.on.aws/" target="_blank" rel="noopener"><span class="pt">Painel no ar</span><span class="en">Live dashboard</span></a> · <a href="https://github.com/gualmeidap/sentinela" target="_blank" rel="noopener"><span class="pt">Repositório</span><span class="en">Repository</span></a></p>
+      <div class="chips"><span>Java 21</span><span>Spring Boot</span><span>AWS Lambda</span><span>DynamoDB</span><span>EventBridge</span><span>CloudFormation</span><span>GitHub Actions</span></div>
+    </div>
+  </article>
+
+  <article class="card">
+    <a class="shot" href="assets/assinador.gif"><img src="assets/assinador.gif" alt="Portal de assinatura eletrônica" loading="lazy"></a>
+    <div class="body">
+      <span class="tag soft"><span class="pt">Em desenvolvimento</span><span class="en">In development</span></span>
+      <h3><span class="pt">Portal de assinatura eletrônica</span><span class="en">Electronic signature portal</span></h3>
+      <div class="pt">
+        <p>Portal corporativo interno para RH, Financeiro e TI conduzirem fluxos de assinatura, com qualquer número de signatários, ordem estrita opcional, prazos e cópia (CC), buscando contatos no Active Directory. O provedor de assinatura fica atrás de uma interface: Documenso self-hosted por padrão, DocuSeal como alternativa.</p>
+        <p class="focus"><strong>Foco de engenharia:</strong> o painel se atualiza sozinho. Webhooks do provedor validados por HMAC chegam ao back-end em Go, que empurra a mudança às telas abertas por Server-Sent Events, sem polling.</p>
+      </div>
+      <div class="en">
+        <p>Internal corporate portal for HR, Finance and IT to run signature workflows, with any number of signers, optional strict ordering, deadlines and CC, pulling contacts from Active Directory. The signature provider sits behind an interface: self-hosted Documenso by default, DocuSeal as an alternative.</p>
+        <p class="focus"><strong>Engineering focus:</strong> the dashboard updates itself. HMAC-verified provider webhooks reach the Go back end, which pushes the change to every open screen over Server-Sent Events, with no polling.</p>
+      </div>
+      <p class="links"><span class="pt">Código: sistema interno, repositório não público (GIF com dados de demonstração)</span><span class="en">Source: internal system, repository not public (GIF uses demo data)</span></p>
+      <div class="chips"><span>Go</span><span>React</span><span>PostgreSQL</span><span>Active Directory / LDAP</span><span>Server-Sent Events</span><span>Microsoft Graph</span></div>
+    </div>
+  </article>
+
+  <article class="card">
+    <a class="shot" href="assets/senha-aluno.gif"><img src="assets/senha-aluno.gif" alt="Autoatendimento de senha" loading="lazy"></a>
+    <div class="body">
+      <span class="tag soft"><span class="pt">Sistema interno</span><span class="en">Internal system</span></span>
+      <h3><span class="pt">Autoatendimento de senha para alunos</span><span class="en">Student password self-service</span></h3>
+      <div class="pt">
+        <p>Um portal pequeno em que o aluno redefine a própria senha do Active Directory sem passar pela secretaria. A identidade é validada contra o cadastro acadêmico e um código de 6 dígitos de uso único vai para o e-mail acadêmico, válido por 15 minutos.</p>
+        <p class="focus"><strong>Foco de engenharia:</strong> a resposta é idêntica quer o RA exista ou não, e o limite de tentativas é aplicado antes de qualquer consulta chegar ao ERP.</p>
+      </div>
+      <div class="en">
+        <p>A small portal that lets a student reset their own Active Directory password without going through the registrar's office. Identity is validated against academic records, and a single-use 6-digit code goes to the academic email, valid for 15 minutes.</p>
+        <p class="focus"><strong>Engineering focus:</strong> the response is identical whether the student ID exists or not, and rate limiting is applied before any query reaches the ERP.</p>
+      </div>
+      <p class="links"><span class="pt">Código: sistema interno, repositório não público (GIF com dados de demonstração)</span><span class="en">Source: internal system, repository not public (GIF uses demo data)</span></p>
+      <div class="chips"><span>Python</span><span>Active Directory / LDAP</span><span>TOTVS RM</span><span>Microsoft Graph</span></div>
+    </div>
+  </article>
+</section>
+
+<section id="stack">
+  <h2>Stack</h2>
+  <div class="stack">
+    <div><h3><span class="pt">Linguagens</span><span class="en">Languages</span></h3><div class="chips"><span>Python</span><span>Go</span><span>Java</span><span>SQL</span></div></div>
+    <div><h3>Frameworks</h3><div class="chips"><span>FastAPI</span><span>Flask</span><span>Django</span><span>Spring Boot</span><span>React</span></div></div>
+    <div><h3><span class="pt">Dados</span><span class="en">Data</span></h3><div class="chips"><span>PostgreSQL</span><span>SQL Server</span><span>MySQL</span><span>Redis</span><span>DynamoDB</span></div></div>
+    <div><h3><span class="pt">Infra e ferramentas</span><span class="en">Infrastructure &amp; tools</span></h3><div class="chips"><span>Docker</span><span>AWS</span><span>GitHub Actions</span><span>Grafana</span><span>Prometheus</span><span>Ollama</span><span>Git</span></div></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">
+  <span class="pt">Aberto a vagas remotas. Fale comigo pelo <a href="https://www.linkedin.com/in/gualmeidap" target="_blank" rel="noopener">LinkedIn</a>.</span>
+  <span class="en">Open to remote roles. Reach me on <a href="https://www.linkedin.com/in/gualmeidap" target="_blank" rel="noopener">LinkedIn</a>.</span>
+</div></footer>
+
+<script>
+(function () {
+  // Padrão: português. Para o idioma seguir o navegador do visitante, troque para true.
+  var AUTO_DETECT = false;
+  var KEY = "lang";
+  function valid(l) { return l === "pt" || l === "en"; }
+  function apply(l) {
+    document.documentElement.setAttribute("data-lang", l);
+    document.documentElement.lang = l === "pt" ? "pt-BR" : "en";
+    document.title = l === "pt" ? "Gustavo Almeida · Software Engineer" : "Gustavo Almeida · Software Engineer";
+    document.querySelectorAll(".lang button").forEach(function (b) {
+      b.setAttribute("aria-pressed", b.dataset.set === l ? "true" : "false");
+    });
+  }
+  var fromUrl = new URLSearchParams(location.search).get("lang");
+  var saved = null;
+  try { saved = localStorage.getItem(KEY); } catch (e) {}
+  var lang = valid(fromUrl) ? fromUrl : valid(saved) ? saved : "pt";
+  if (!valid(fromUrl) && !valid(saved) && AUTO_DETECT) {
+    lang = /^pt/i.test(navigator.language || "") ? "pt" : "en";
+  }
+  apply(lang);
+  document.querySelectorAll(".lang button").forEach(function (b) {
+    b.addEventListener("click", function () {
+      apply(b.dataset.set);
+      try { localStorage.setItem(KEY, b.dataset.set); } catch (e) {}
+    });
+  });
+})();
+</script>
+</body>
+</html>
